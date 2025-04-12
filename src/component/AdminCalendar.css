@@ -1,0 +1,109 @@
+/* ====== GLOBAL STYLES ====== */
+.admin-calendar {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  /* ====== HEADING STYLES ====== */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #e3e3e3;
+  }
+  
+  /* ====== CUSTOMIZED REACT CALENDAR ====== */
+  .react-calendar {
+    background: #222;
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .react-calendar__tile {
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .react-calendar__tile--now {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+
+  .heading{
+    color: #000;
+  }
+  
+  .react-calendar__tile--active {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(106, 17, 203, 0.4);
+  }
+  
+  /* ====== MEETING BOOKINGS LIST ====== */
+  .bookings-container {
+    margin-top: 30px;
+  }
+  
+  .booking-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    color: #000;
+  }
+  
+  .booking-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 40px rgba(255, 255, 255, 0.15);
+  }
+  
+  .booking-card strong {
+    font-size: 16px;
+    color: #ffcc00;
+  }
+  
+  /* ====== JOIN MEETING BUTTON ====== */
+  .join-meeting-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    box-shadow: 0px 5px 15px rgba(255, 81, 47, 0.3);
+  }
+  
+  .join-meeting-btn:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 81, 47, 0.6);
+  }
+  
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+    color: wheat;
+}

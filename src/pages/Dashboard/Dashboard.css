@@ -1,0 +1,276 @@
+/* ======================== */
+/* ✨ General Styling */
+/* ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ======================== */
+/* 🎨 Light & Dark Mode */
+/* ======================== */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ffffff;
+  --bg-color: #f4f7fe;
+  --text-color: #222;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --sidebar-bg: linear-gradient(135deg, #ffffff, #f8f8f8);
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: rgba(40, 40, 40, 0.95);
+  --sidebar-bg: linear-gradient(135deg, #001f3f, #004aad);
+}
+
+/* ======================== */
+/* 🏠 Dashboard Layout */
+/* ======================== */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ======================== */
+/* 📌 Sidebar Styling */
+/* ======================== */
+.sidebar {
+  width: 260px;
+  background: #2596be;
+  padding: 25px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+/* ======================== */
+/* 🏆 Buttons */
+/* ======================== */
+.btns {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle-mode,
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-mode {
+  background: white;
+  color: var(--primary-color);
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #d63232;
+}
+
+/* ======================== */
+/* 📊 Main Dashboard */
+/* ======================== */
+.dashboard-content {
+  flex: 1;
+  padding: 40px;
+  background: var(--bg-color);
+  overflow-y: auto;
+  transition: background 0.3s ease-in-out;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* ======================== */
+/* 📈 Dashboard Cards */
+/* ======================== */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-card {
+  flex: 1;
+  min-width: 260px;
+  padding: 22px;
+  background: var(--card-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ======================== */
+/* 📝 Tasks Section */
+/* ======================== */
+.tasks-container {
+  width: 100%;
+}
+
+.task-card {
+  background: var(--card-bg);
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.completed-text {
+  background: #28a745;
+  color: white;
+}
+
+.in-progress-text {
+  background: #ff9800;
+  color: white;
+}
+
+/* ======================== */
+/* 📂 File Upload */
+/* ======================== */
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-btn:hover {
+  background: #0056b3;
+}
+
+/* ======================== */
+/* 📱 Responsive Design */
+/* ======================== */
+@media (max-width: 1024px) {
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+    display: none;
+  }
+
+  .nav-item span {
+    display: none;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .dashboard-card {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+}

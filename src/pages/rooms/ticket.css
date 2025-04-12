@@ -1,0 +1,159 @@
+/* 🌟 General Styles */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 🏠 Container Styles */
+  .container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* 🆕 Page Title */
+  .page-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #1d1d1f;
+  }
+  
+  /* 🎟 Ticket Creation Form */
+  .ticket-form {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .ticket-form:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ticket-form input,
+  .ticket-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+  
+  .ticket-form input:focus,
+  .ticket-form textarea:focus {
+    border-color: #0078d4;
+    outline: none;
+  }
+  
+  /* 📩 Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #0078d4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #005a9e;
+  }
+  
+  /* 🎫 Ticket List */
+  .ticket-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    border-left: 6px solid #0078d4;
+    transition: 0.3s;
+  }
+  
+  .ticket-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  /* 📄 Ticket Details */
+  .ticket-card h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ticket-card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .ticket-card .status {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0078d4;
+  }
+  
+  /* 🎛 Status Filter */
+  .filter-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: white;
+    transition: 0.2s;
+  }
+  
+  .filter-select:focus {
+    border-color: #0078d4;
+    outline: none;
+  }
+  
+  /* 🏷 Status Buttons */
+  .status-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .status-button:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* 🌍 Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .ticket-form,
+    .ticket-card {
+      padding: 15px;
+    }
+  }
+  

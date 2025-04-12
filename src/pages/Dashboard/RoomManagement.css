@@ -1,0 +1,169 @@
+/* General Styles */
+.room-management-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Room Form */
+.room-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.room-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 400%;
+  background: rgba(74, 74, 74, 0.2);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.room-form input:focus {
+  background: rgba(147, 147, 147, 0.4);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5b75e8, #925ad8);
+}
+
+/* Room Cards */
+.room-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.room-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.room-card p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Actions */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.assign-btn {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+}
+
+.assign-btn:hover {
+  background: linear-gradient(135deg, #2bcf68, #0d8878);
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #f09819, #ff5858);
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #e3870d, #e04e4e);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #e93e60, #e13e1d);
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  border: 1px black solid;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .room-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-form input {
+    width: 90%;
+  }
+
+  .room-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-card {
+    width: 90%;
+  }
+}
